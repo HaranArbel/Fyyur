@@ -193,7 +193,6 @@ def show_venue(venue_id):
       })
 
   past_shows = []
-  # if show is in past, add show details to past
   for show in shows:
     if show.start_time < datetime.now():
       past_shows.append({
